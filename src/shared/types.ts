@@ -8,7 +8,7 @@ export interface Recipe {
 export interface Step {
     duration?: Duration;
     ingredients?: Ingredient[];
-    instructions?: string;
+    instructions: string;
     temperature?: number | string;
 }
 

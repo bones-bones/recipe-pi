@@ -36,8 +36,9 @@ export const recipes: Recipe[] = [
                         amount: { amount: 0.5, type: 'Cup' },
                     },
                     {
-                        ingredient: 'Chopped Walnuts',
+                        ingredient: 'Walnuts',
                         amount: { amount: 3, type: 'Tablespoon' },
+                        prepMethod: 'chopped',
                     },
                 ],
             },
@@ -48,8 +49,9 @@ export const recipes: Recipe[] = [
                 instructions: 'Add',
                 ingredients: [
                     {
-                        ingredient: 'Small Chopped Onion',
+                        ingredient: 'Small Onion',
                         amount: { amount: 1 },
+                        prepMethod: 'chopped',
                     },
                 ],
             },
@@ -78,7 +80,7 @@ export const recipes: Recipe[] = [
                 instructions: 'Bring to a boil',
             },
             {
-                instructions: 'Reduce heat and cover',
+                instructions: 'Cover and turn heat to',
                 temperature: 'Low',
             },
             {
