@@ -59,3 +59,7 @@ Steps
 -   Add Broth, Rosemary, Parsley
 -   Bring to a boil
 -   Reduce heat to low, cook for 17 minutes
+
+# Decision Points
+
+-   Prep instructions belong with the ingredient (ie chopped tomatoes vs chop the tomatoes). This seems to be the common pattern and allows you to do some things ahead of time
