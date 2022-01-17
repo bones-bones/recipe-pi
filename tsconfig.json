@@ -1,7 +1,11 @@
 {
     "compilerOptions": {
         "target": "ES2016",
-        "lib": ["dom", "dom.iterable", "esnext"],
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
         "allowJs": true,
         "skipLibCheck": true,
         "esModuleInterop": true,
@@ -15,8 +19,10 @@
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "react",
-        "outDir": "./dist/"
+        "outDir": "./dist"
     },
-    "exclude": ["node_modules"],
-    "include": ["./src", "./server"]
+    "include": [
+        "./src",
+        "./server"
+    ]
 }
