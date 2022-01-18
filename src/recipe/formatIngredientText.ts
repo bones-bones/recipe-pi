@@ -1,9 +1,9 @@
 import { Ingredient } from '../shared/types';
 
 export const formatIngredientText = (ingredient: Ingredient) => {
-    return `${ingredient.amount.amount}${
+    return `${ingredient.amount.value}${
         ingredient.amount.type ? ' ' + ingredient.amount.type : ''
     }${ingredient.prepMethod ? ' ' + ingredient.prepMethod : ''} ${
-        ingredient.ingredient
+        ingredient.type
     }`;
 };

@@ -14,13 +14,13 @@ export const recipes: Recipe[] = [
                 ingredients: [
                     {
                         // Maybe use descriptor as a common attribute. Or title.
-                        ingredient: 'Butter',
+                        type: 'Butter',
                         // TODO: Wordy words and the words that word them
-                        amount: { amount: 2, type: 'Tablespoon' },
+                        amount: { value: 2, type: 'Tablespoon' },
                     },
                     {
-                        ingredient: 'Olive Oil',
-                        amount: { amount: 2, type: 'Tablespoon' },
+                        type: 'Olive Oil',
+                        amount: { value: 2, type: 'Tablespoon' },
                     },
                 ],
             },
@@ -28,16 +28,16 @@ export const recipes: Recipe[] = [
                 instructions: 'Add',
                 ingredients: [
                     {
-                        ingredient: 'Rice',
-                        amount: { amount: 1, type: 'Cup' },
+                        type: 'Rice',
+                        amount: { value: 1, type: 'Cup' },
                     },
                     {
-                        ingredient: 'Spaghetti',
-                        amount: { amount: 0.5, type: 'Cup' },
+                        type: 'Spaghetti',
+                        amount: { value: 0.5, type: 'Cup' },
                     },
                     {
-                        ingredient: 'Walnuts',
-                        amount: { amount: 3, type: 'Tablespoon' },
+                        type: 'Walnuts',
+                        amount: { value: 3, type: 'Tablespoon' },
                         prepMethod: 'chopped',
                     },
                 ],
@@ -49,30 +49,30 @@ export const recipes: Recipe[] = [
                 instructions: 'Add',
                 ingredients: [
                     {
-                        ingredient: 'Small Onion',
-                        amount: { amount: 1 },
+                        type: 'Small Onion',
+                        amount: { value: 1 },
                         prepMethod: 'chopped',
                     },
                 ],
             },
             {
                 instructions: 'Cook',
-                duration: { amount: 2, interval: 'Minute' },
+                duration: { value: 2, type: 'Minute' },
             },
             {
                 instructions: 'Add',
                 ingredients: [
                     {
-                        ingredient: 'Broth',
-                        amount: { amount: 3, type: 'Cup' },
+                        type: 'Broth',
+                        amount: { value: 3, type: 'Cup' },
                     },
                     {
-                        ingredient: 'Parsley',
-                        amount: { amount: 1, type: 'Teaspoon' },
+                        type: 'Parsley',
+                        amount: { value: 1, type: 'Teaspoon' },
                     },
                     {
-                        ingredient: 'Rosemary',
-                        amount: { amount: 0.3, type: 'Teaspoon' },
+                        type: 'Rosemary',
+                        amount: { value: 0.3, type: 'Teaspoon' },
                     },
                 ],
             },
@@ -85,7 +85,7 @@ export const recipes: Recipe[] = [
             },
             {
                 instructions: 'Cook',
-                duration: { amount: 17, interval: 'Minute' },
+                duration: { value: 17, type: 'Minute' },
             },
         ],
     },
@@ -98,8 +98,8 @@ export const recipes: Recipe[] = [
                 instructions: 'Add',
                 ingredients: [
                     {
-                        ingredient: 'Olive Oil',
-                        amount: { amount: 2, type: 'Tablespoon' },
+                        type: 'Olive Oil',
+                        amount: { value: 2, type: 'Tablespoon' },
                     },
                 ],
             },
@@ -110,7 +110,7 @@ export const recipes: Recipe[] = [
             {
                 instructions: 'Add',
                 ingredients: [
-                    { ingredient: 'Corn', amount: { amount: 3, type: 'Cup' } },
+                    { type: 'Corn', amount: { value: 3, type: 'Cup' } },
                 ],
             },
         ],
@@ -125,8 +125,8 @@ export const recipes: Recipe[] = [
                 temperature: 'Meduim-Low',
                 ingredients: [
                     {
-                        ingredient: 'Olive Oil',
-                        amount: { amount: 2, type: 'Tablespoon' },
+                        type: 'Olive Oil',
+                        amount: { value: 2, type: 'Tablespoon' },
                     },
                 ],
             },
@@ -134,8 +134,8 @@ export const recipes: Recipe[] = [
                 instructions: 'Add',
                 ingredients: [
                     {
-                        ingredient: 'Yellow or White Onion',
-                        amount: { amount: 1 },
+                        type: 'Yellow or White Onion',
+                        amount: { value: 1 },
                         prepMethod: 'Chopped',
                     },
                 ],
@@ -145,32 +145,32 @@ export const recipes: Recipe[] = [
                 instructions: 'Stir in',
                 ingredients: [
                     {
-                        ingredient: 'Chicken',
+                        type: 'Chicken',
                         prepMethod: 'Chopped into 3/4 inch chunks',
-                        amount: { amount: 1, type: 'Pound' },
+                        amount: { value: 1, type: 'Pound' },
                     },
                     {
-                        ingredient: 'Yellow Curry Paste',
-                        amount: { amount: 0.3, type: 'Cup' },
+                        type: 'Yellow Curry Paste',
+                        amount: { value: 0.3, type: 'Cup' },
                     },
                 ],
             },
             {
                 instructions: 'Cook',
-                duration: { amount: 4, interval: 'Minute' },
+                duration: { value: 4, type: 'Minute' },
             },
             {
                 instructions: 'Stir in',
                 ingredients: [
                     {
-                        ingredient: 'Potato',
+                        type: 'Potato',
                         prepMethod: 'Chopped into bitesize chunks',
-                        amount: { amount: 2, type: 'Cup' },
+                        amount: { value: 2, type: 'Cup' },
                     },
                     {
-                        ingredient: 'Red Bell pepper',
+                        type: 'Red Bell pepper',
                         prepMethod: 'Chopped into small strips',
-                        amount: { amount: 0.5 },
+                        amount: { value: 0.5 },
                     },
                 ],
             },
@@ -178,30 +178,30 @@ export const recipes: Recipe[] = [
                 instructions: 'Add',
                 ingredients: [
                     {
-                        ingredient: 'Coconut Milk',
-                        amount: { amount: 2, type: '14 oz Can' },
+                        type: 'Coconut Milk',
+                        amount: { value: 2, type: '14 oz Can' },
                     },
                     {
-                        ingredient: 'Water',
-                        amount: { amount: 0.5, type: 'Cup' },
+                        type: 'Water',
+                        amount: { value: 0.5, type: 'Cup' },
                     },
                 ],
             },
             {
                 instructions: 'Simmer',
-                duration: { amount: 30, interval: 'Minute' },
+                duration: { value: 30, type: 'Minute' },
             },
             { instructions: 'Remove from heat' },
             {
                 instructions: 'Stir in',
                 ingredients: [
                     {
-                        ingredient: 'Fish sauce',
-                        amount: { amount: 2, type: 'Teaspoon' },
+                        type: 'Fish sauce',
+                        amount: { value: 2, type: 'Teaspoon' },
                     },
                     {
-                        ingredient: 'Brown sugar',
-                        amount: { amount: 1.5, type: 'Tablespoon' },
+                        type: 'Brown sugar',
+                        amount: { value: 1.5, type: 'Tablespoon' },
                     },
                 ],
             },
@@ -209,8 +209,8 @@ export const recipes: Recipe[] = [
                 instructions: 'Serve and top with',
                 ingredients: [
                     {
-                        ingredient: 'Cilantro',
-                        amount: { amount: 2, type: 'Tablespoon' },
+                        type: 'Cilantro',
+                        amount: { value: 2, type: 'Tablespoon' },
                         prepMethod: 'Chopped',
                     },
                 ],

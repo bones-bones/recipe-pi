@@ -13,17 +13,17 @@ export interface Step {
 }
 
 export interface Ingredient {
-    ingredient: string;
+    type: string;
     prepMethod?: string;
     amount: Amount;
 }
 
 export interface Amount {
     type?: 'Tablespoon' | 'Teaspoon' | 'Cup' | 'Pound' | '14 oz Can';
-    amount: number;
+    value: number;
 }
 
 export interface Duration {
-    amount?: number;
-    interval?: 'Minute' | 'Hour';
+    value?: number;
+    type?: 'Minute' | 'Hour';
 }

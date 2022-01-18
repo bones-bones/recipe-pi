@@ -10,7 +10,7 @@ export const getStepInstructions = (step: Step) => {
             : ''
     }${
         step.duration
-            ? `for ${step.duration.amount} ${step.duration.interval}(s)`
+            ? `for ${step.duration.value} ${step.duration.type}(s)`
             : ''
     }${step.temperature ? `to ${step.temperature}` : ''}`;
 };

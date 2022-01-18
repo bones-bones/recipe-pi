@@ -11,14 +11,14 @@ export const getIngredientsFromSteps = (steps: Step[]) => {
     const ingredientMapping = flattenIngredients.reduce(
         (previousValue, currentValue) => {
             const existing = previousValue.find(
-                ({ type }) => type === currentValue.ingredient
+                ({ type }) => type === currentValue.type
             );
 
             if (existing) {
                 existing.ingredients.push(currentValue);
             } else {
                 previousValue.push({
-                    type: currentValue.ingredient,
+                    type: currentValue.type,
                     ingredients: [currentValue],
                 });
             }
