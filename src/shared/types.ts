@@ -19,7 +19,7 @@ export interface Ingredient {
 }
 
 export interface Amount {
-    type?: 'Tablespoon' | 'Teaspoon' | 'Cup';
+    type?: 'Tablespoon' | 'Teaspoon' | 'Cup' | 'Pound' | '14 oz Can';
     amount: number;
 }
 
