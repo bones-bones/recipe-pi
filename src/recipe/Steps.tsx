@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getStepInstructions } from './getStepInstructions';
 import { selectActiveStep, selectSteps } from './selectors';
 import { nextStep } from './store';
+import { ws } from './useSocket';
 
 export const Steps = () => {
     const steps = useSelector(selectSteps) || [];
@@ -11,6 +12,10 @@ export const Steps = () => {
     const refArray = useRef<HTMLLIElement[]>([]);
 
     const dispatch = useDispatch();
+
+    ws.on('message', () => {
+        dispatch(nextStep());
+    });
 
     useEffect(() => {
         const targetStep = refArray.current[activeStep];
