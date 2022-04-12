@@ -63,3 +63,5 @@ Steps
 # Decision Points
 
 -   Prep instructions belong with the ingredient (ie chopped tomatoes vs chop the tomatoes). This seems to be the common pattern and allows you to do some things ahead of time
+
+https://cafedelites.com/garlic-lemon-herb-mediterranean-chicken-potatoes/
